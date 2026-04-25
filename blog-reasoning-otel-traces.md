@@ -191,7 +191,13 @@ The Strands SDK maps Claude's `reasoningContent` blocks through a generic conten
 
 ## Try It Yourself
 
-The full code — agent, trace extraction tool, and example runner — is available in the [agent-reasoning](https://github.com) repo. To reproduce:
+The full code is available in the [agent-reasoning-trace](https://github.com/muhyun/agent-reasoning-trace) repo:
+
+- [`agent.py`](https://github.com/muhyun/agent-reasoning-trace/blob/main/agent.py) — Multi-turn reasoning agent with Strands SDK, Claude Sonnet 4.5 on Bedrock, and extended thinking
+- [`extract_reasoning.py`](https://github.com/muhyun/agent-reasoning-trace/blob/main/extract_reasoning.py) — Tool to extract reasoning/thinking blocks from OTEL trace files
+- [`run_example.py`](https://github.com/muhyun/agent-reasoning-trace/blob/main/run_example.py) — Example runner that generates a 3-turn reasoning trace
+
+To reproduce:
 
 ```bash
 pip install 'strands-agents[anthropic]' strands-agents-tools
